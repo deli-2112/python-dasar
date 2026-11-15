@@ -1,17 +1,16 @@
-# main.py
-import matematika
+from my_package import operasi, geometri
 
-print(matematika.tambah(2, 3))   # Output: 5
-print(matematika.kali(4, 5))     # Output: 20
+print(operasi.kurang(10, 4))
+print(geometri.luas_persegi(5))
 
-import matematika as m
+from my_package.operasi import kurang
+from my_package.geometri import luas_persegi
 
-print(m.tambah(10, 5))   # Output: 15
-from matematika import tambah
+print(kurang(20, 7))
+print(luas_persegi(8))
 
-print(tambah(7, 3))   # Output: 10
+import os
+import datetime
 
-import math
-
-print(math.sqrt(16))   # Akar kuadrat → 4.0
-print(math.pi)         # Nilai π → 3.141592653589793
+print(os.getcwd())
+print(datetime.date.today())
